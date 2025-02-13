@@ -1,5 +1,5 @@
 # AlliewayAudio_MMFreebies
-4MS MetaModule plugin build wrapper for AlliewayAudio_freebies VCVRack plugin
+4MS MetaModule plugin build wrapper for the AlliewayAudio_Freebies VCVRack plugin
 
 This is a [4MS MetaModule](https://metamodule.4ms.info/) build wrapper for the [AlliewayAudio_Freebies VCVRack plugin](https://github.com/AlliewayAudio/AlliewayAudio_Freebies), in order to build a .mmplugin binary of the [Chilly Cheese](https://library.vcvrack.com/AlliewayAudio_Freebies/chilly_cheese) module (itself a version of the [Whimiscal Raps Cold Mac](https://www.whimsicalraps.com/products/cold-mac) Eurorack module).
 
