@@ -48,7 +48,7 @@ jobs:
           sudo apt-get install ninja-build
 
       - name: Set Release Version
-        if: startsWith(github.ref, 'refs/tags/')
+        if: startsWith(github.ref, 'refs/tags/v')
         uses: FranzDiebold/github-env-vars-action@v2
 
       - name: Build
@@ -62,8 +62,13 @@ jobs:
 
       - name: Release
         if: startsWith(github.ref, 'refs/tags/') && ${{ inputs.do_release }}
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ github.ref }}
           name: "Release: ${{ env.CI_REF_NAME }}"
+          body: |
+           ${{ env.CI_REPOSITORY_NAME }} MetaModule Plugin ${{ env.CI_REF_NAME }}
+          draft: false 
+          prerelease: false
           files: |
             metamodule-plugins/*.mmplugin
