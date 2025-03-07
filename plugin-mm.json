@@ -1,8 +1,8 @@
 {
 	"MetaModulePluginMaintainer": "Richard Smith",
 	"MetaModulePluginMaintainerEmail": "rsmith@rsbatechnology.co.uk",
-	"MetaModulePluginMaintainerUrl": "",
-	"MetaModuleDescription": "AlliewayAudio_Freebies for Metamodule",
+	"MetaModulePluginMaintainerUrl": "https://github.com/rjsmith",
+	"MetaModuleDescription": "AlliewayAudio_Freebies ported for Metamodule",
 	"MetaModuleIncludedModules": [
 		{
 			"slug": "chilly_cheese",
