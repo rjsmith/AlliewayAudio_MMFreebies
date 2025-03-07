@@ -16,7 +16,7 @@ Thanks also to Whimsical Raps for also OK'ing me to publish this build port - of
 ## Build Instructions
 
 > [!NOTE]
-> Setup the build prequisites as described in the VCVRack plugin porting instructions in the 4MS [MetaModule Plugin SDK](https://github.com/4ms/metamodule-plugin-sdk) repo. 
+> Setup the build pre-requisites as described in the VCVRack plugin porting instructions in the 4MS [MetaModule Plugin SDK](https://github.com/4ms/metamodule-plugin-sdk) repo. 
 
 Check this repo out into a ```<projects-dir>/AlliewayAudio_MMFreebies``` folder
 
@@ -71,4 +71,9 @@ cmake --build build
 
 This will build a new ```<project-dir>/AlliewayAudio_MMFreebies/metamodule-plugins/AlliewayAudio_Freebies.mmplugin``` plugin install file.
 
+## Github Workflow
 
+This repo has a Github Workflow to build and release a metamodule plugin, adapted from https://github.com/4ms/metamodule-plugin-sdk/blob/main/docs/release.md#publishing-with-a-github-workflow
+
+1. Push a tag with v2.0.x-dev-12
+2. Manually run the build action here: https://github.com/rjsmith/AlliewayAudio_MMFreebies/actions/workflows/build-metamodule-plugin.yml
