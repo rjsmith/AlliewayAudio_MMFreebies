@@ -10,6 +10,7 @@ on:
         options:
           - main
           - v2.0-dev
+          - v2.0-dev-13
       do_release:
         description: 'Create Release (must also select Tag above!")'
         required: true
